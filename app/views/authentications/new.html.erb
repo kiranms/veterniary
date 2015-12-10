@@ -1,0 +1,24 @@
+<div class="col-sm-6">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Login</h2>
+    </div>
+    <div class="panel-body">
+        <%= form_tag :authentications do |f| %>
+          <div class="form-group">
+            <div>
+              <%= label_tag :email %>
+            </div>
+            <%= text_field :auth_params, :email %>
+            <div>
+              <%= label_tag :password %>
+            </div>
+
+            <%= password_field :auth_params, :password %>
+
+          </div>
+          <%= submit_tag "Sign in", class: "btn btn-primary" %>
+        <%end%>
+    </div>
+  </div>
+</div>

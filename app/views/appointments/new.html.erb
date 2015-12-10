@@ -1,0 +1,22 @@
+<h1>Create a Appointment </h1>
+<body bgcolor=silver>
+<%= simple_form_for @app_create do |f| %>
+<br><br>
+  <%= f.input :date_of_visit, as: :date %><br>
+  <%= f.input :customer_id do %>
+    <%= f.select :customer_id, User.where(role: :customer).map { |u| [u.name, u.id] }%><br>
+  <% end %>
+  <%= f.input :pet_id do %>
+    <%= f.select :pet_id, Pet.all.map { |pet| [pet.name, pet.id] }%><br>
+  <% end %>
+  <%= f.input :doctor_id do %>
+    <%= f.select :doctor_id, User.where(role: :doctor).map { |user| [user.name, user.id] }%><br>
+  <% end %>
+  <%= f.input :requires_reminder %><br>
+  <%= f.input :reason_for_visit%><br>
+ <div align = "center">
+ <div position = relative, top= 40px, right = 20px>
+
+  <%= f.submit %></div></div>
+<% end %>
+</body>

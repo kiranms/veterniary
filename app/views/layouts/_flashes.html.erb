@@ -1,0 +1,15 @@
+<% if flash[:success] %>
+  <div class="alert flash alert-success" role="alert">
+    <%= flash[:success] %>
+  </div>
+<% elsif flash[:error] %>
+  <div class="alert flash alert-danger" role="alert">
+    <% if flash[:error].class == Array %>
+      <% flash[:error].each do |error| %>
+        <p><%= error %></p>
+      <% end %>
+    <% else %>
+      <p><%= flash[:error] %></p>
+    <% end %>
+  </div>
+<% end %>

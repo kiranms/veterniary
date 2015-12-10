@@ -1,0 +1,46 @@
+
+<% if @current_user.owner? %>
+  <h2> Doctors List </h2>
+  <%= link_to "Create a new doctor", new_user_path %><br>
+
+  <% @doctors.each do |doctor| %>
+    <%= doctor.name %>
+    <%= link_to "Edit #{doctor.name}", edit_user_path(doctor) %><br>
+  <% end %>
+<% end %>
+
+<% if @current_user.role == 'doctor' %>
+
+  <h2> Pets List </h2>
+
+  <% @appointment_pets.each do |pet| %>
+    Pet Name  : <%= pet.name %></br>
+    Pet Type  : <%= pet.pet_type %></br>
+    Pet Breed : <%= pet.breed %> </br>
+    Pet Age   : <%= pet.age %></br>
+    Pet Weight: <%= pet.weight %></br>
+    Pet Last Visit Date: <%= pet.date_of_last_visit %></br>
+    <%= link_to "Edit pet info", edit_pet_path(pet) %></br>
+  <% end %><br>
+  <br><br>
+  <div >
+<% elsif @current_user.role == 'receptionist' %>
+  <p>Logged in as receptionist</p>
+  <% @all_appointments.each do |appointment| %>
+    <div>Customer Name: <%= appointment.customer.name %></br>
+    Pet Name: <%= appointment.pet.try(:name) %></br>
+    Doctor Name: <%= appointment.doctor.try(:name) %></br>
+    Date of visit: <%= appointment.date_of_visit %></br><br>
+    </div>
+  <% end %>
+  </div>
+  <%= link_to "create Appointment", new_appointment_path %>
+<% elsif @current_user.role == 'customer' %>
+  <h2> Pets Appointment List </h2>
+  <% @pets.each do |pet| %>
+    Name: <%= pet.name %></br>
+    Date of next appointment: <%= pet.next_appointment.date_of_visit %></br>
+    Reason for visit: <%= pet.next_appointment.reason_for_visit %>
+  <% end %>
+
+<% end %>

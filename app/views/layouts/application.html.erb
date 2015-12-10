@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VeterniaryPractice</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="page-header"><%= "VeterniaryPractice" %>
+        <ul class="btn navbar-btn navbar-right">
+          <%= button_to "Sign out", signout_path, :method => :delete if session[:current_user] %>
+        </ul>
+        <ul class="btn navbar-btn navbar-right">
+          <%= button_to "Home", users_path, method: :get if session[:current_user] %>
+        </ul>
+      </h1>
+ 
+
+
+      <%= render "layouts/flashes" %>
+
+
+<%= yield %>
+
+</body>
+</html>

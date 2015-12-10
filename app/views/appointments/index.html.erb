@@ -1,0 +1,14 @@
+<h1>Appointment Details </h1>
+<body bgcolor=silver>
+<% @app_creates.each do |app| %>
+
+  Date of Visit    : <%= app.date_of_visit%><br>
+  Customer Name    : <%= app.customer.name %><br>
+  Pet Name         : <%= app.pet.try(:name) %><br>
+  Require reminder : <%= app.requires_reminder %><br>
+  Reason for Visit : <%= app.reason_for_visit%><br><br><br>
+
+ 
+<% end %>
+
+</body>

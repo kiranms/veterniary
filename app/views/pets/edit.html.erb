@@ -1,0 +1,12 @@
+<%= simple_form_for @pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :pet_type do %>
+    <%= f.select :pet_type, options_for_select(%w(dog cat bird))%><br>
+  <% end %>
+  <%= f.input :breed %>
+  <%= f.input :age %>
+  <%= f.input :weight %>
+  <%= f.input :date_of_last_visit, as: :date %>
+
+  <%= f.button :submit %>
+<% end %>

@@ -1,0 +1,435 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Beau Olson"], ["zip", "40277-6015"], ["email", "jannie.miller@rathpfannerstill.io"], ["password", "90cus78i1"], ["role", "customer"], ["created_at", "2015-08-30 23:16:26.680006"], ["updated_at", "2015-08-30 23:16:26.680006"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "jannie.miller@rathpfannerstill.io"], ["password", "90cus78i1"]]
+  [1m[36m (1.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Kasey Pollich"], ["zip", "70767"], ["email", "deion_jakubowski@zulauf.io"], ["password", "6wfjpmls"], ["role", "customer"], ["created_at", "2015-08-30 23:18:53.797650"], ["updated_at", "2015-08-30 23:18:53.797650"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "deion_jakubowski@zulauf.io"], ["password", "6wfjpmls"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1[0m  [["email", "deion_jakubowski@zulauf.io"], ["password", "6wfjpmls"]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Melany Lind"], ["zip", "56929-2285"], ["email", "roie@weber.net"], ["password", "oh4vn6yf"], ["role", "customer"], ["created_at", "2015-08-30 23:18:53.816310"], ["updated_at", "2015-08-30 23:18:53.816310"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1[0m  [["email", "roie@weber.net"], ["password", "oh4vn6yf1"]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Ophelia Nolan"], ["zip", "39695-2916"], ["email", "maymie@murazikschuster.biz"], ["password", "x1ln3646h"], ["role", "customer"], ["created_at", "2015-08-30 23:19:08.703699"], ["updated_at", "2015-08-30 23:19:08.703699"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "maymie@murazikschuster.biz"], ["password", "x1ln3646h"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1[0m  [["email", "maymie@murazikschuster.biz"], ["password", "x1ln3646h"]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mireille Spinka"], ["zip", "27501-8307"], ["email", "mandy@weimannstroman.com"], ["password", "9uqqipsoj"], ["role", "customer"], ["created_at", "2015-08-30 23:19:08.718154"], ["updated_at", "2015-08-30 23:19:08.718154"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1[0m  [["email", "mandy@weimannstroman.com"], ["password", "9uqqipsoj1"]]
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Buck Yost"], ["zip", "57021-2637"], ["email", "dwight_yost@runolfon.co"], ["password", "5zxxe5364"], ["role", "customer"], ["created_at", "2015-08-30 23:19:34.848192"], ["updated_at", "2015-08-30 23:19:34.848192"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "dwight_yost@runolfon.co"], ["password", "5zxxe53641"]]
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Nedra Zulauf"], ["zip", "90201"], ["email", "eldora@rueckermckenzie.biz"], ["password", "sla6iz1aa"], ["role", "customer"], ["created_at", "2015-08-30 23:19:51.802871"], ["updated_at", "2015-08-30 23:19:51.802871"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "eldora@rueckermckenzie.biz"], ["password", "sla6iz1aa1"]]
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Mrs. Zackery Marvin"], ["zip", "79586"], ["email", "elaina@botsfordbernhard.net"], ["password", "q1leunteg"], ["role", "customer"], ["created_at", "2015-08-30 23:20:03.104906"], ["updated_at", "2015-08-30 23:20:03.104906"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "elaina@botsfordbernhard.net"], ["password", "q1leunteg"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1[0m  [["email", "elaina@botsfordbernhard.net"], ["password", "q1leunteg"]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ralph McKenzie"], ["zip", "94415-8812"], ["email", "darion.daugherty@dach.name"], ["password", "tddfklwga"], ["role", "customer"], ["created_at", "2015-08-30 23:20:03.119722"], ["updated_at", "2015-08-30 23:20:03.119722"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1[0m  [["email", "darion.daugherty@dach.name"], ["password", "tddfklwga1"]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Natalia Muller"], ["zip", "56315-2673"], ["email", "adalberto@mantegaylord.com"], ["password", "e0vltdea4"], ["role", "customer"], ["created_at", "2015-08-30 23:20:45.885837"], ["updated_at", "2015-08-30 23:20:45.885837"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "adalberto@mantegaylord.com"], ["password", "e0vltdea4"]]
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Mathias Pfeffer"], ["zip", "21378-4327"], ["email", "bud.kulas@okuneva.name"], ["password", "o402fdqx7"], ["role", "customer"], ["created_at", "2015-08-30 23:20:45.900010"], ["updated_at", "2015-08-30 23:20:45.900010"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "bud.kulas@okuneva.name"], ["password", "o402fdqx71"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Ms. Chanelle Kertzmann"], ["zip", "20930-6994"], ["email", "haley@beer.co"], ["password", "clnd4l6xp"], ["role", "customer"], ["created_at", "2015-08-30 23:29:41.631556"], ["updated_at", "2015-08-30 23:29:41.631556"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "haley@beer.co"], ["password", "clnd4l6xp"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Josefina Parker"], ["zip", "53359"], ["email", "meda_adams@hane.io"], ["password", "exsds6lpd"], ["role", "customer"], ["created_at", "2015-08-30 23:29:41.648118"], ["updated_at", "2015-08-30 23:29:41.648118"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "meda_adams@hane.io"], ["password", "exsds6lpd1"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Ms. Nasir Weissnat"], ["zip", "61081-7014"], ["email", "scottie_boyle@keeblerkuhic.info"], ["password", "h68oi5zd2"], ["role", "customer"], ["created_at", "2015-08-30 23:30:01.140652"], ["updated_at", "2015-08-30 23:30:01.140652"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "scottie_boyle@keeblerkuhic.info"], ["password", "h68oi5zd2"]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Antonia Jones"], ["zip", "91787-0319"], ["email", "jeanette@bogisich.org"], ["password", "mddsvpg5d"], ["role", "customer"], ["created_at", "2015-08-30 23:30:01.157878"], ["updated_at", "2015-08-30 23:30:01.157878"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "jeanette@bogisich.org"], ["password", "mddsvpg5d1"]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Lexi Konopelski"], ["zip", "99185-8304"], ["email", "thalia.vonrueden@ernserferry.co"], ["password", "v5taam4xo"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:30:01.163651"], ["updated_at", "2015-08-30 23:30:01.163651"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."role" = ?  [["role", "doctor"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Tad Hagenes"], ["zip", "44744"], ["email", "jaqueline@padberg.co"], ["password", "7ib5aagnj"], ["role", "customer"], ["created_at", "2015-08-30 23:32:41.302565"], ["updated_at", "2015-08-30 23:32:41.302565"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "jaqueline@padberg.co"], ["password", "7ib5aagnj"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Candelario Sauer DVM"], ["zip", "87531"], ["email", "sterling_brown@erdmanledner.net"], ["password", "b9553n1io"], ["role", "customer"], ["created_at", "2015-08-30 23:32:41.319268"], ["updated_at", "2015-08-30 23:32:41.319268"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "sterling_brown@erdmanledner.net"], ["password", "b9553n1io1"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Simeon Keeling V"], ["zip", "96255"], ["email", "ezekiel@mitchell.biz"], ["password", "a83gmn3u3"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:32:41.325655"], ["updated_at", "2015-08-30 23:32:41.325655"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."role" = ?  [["role", "doctor"]]
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Adah Runolfsdottir"], ["zip", "66747"], ["email", "chadrick_johnson@rath.net"], ["password", "p5uegfqj2"], ["role", "customer"], ["created_at", "2015-08-30 23:32:41.343266"], ["updated_at", "2015-08-30 23:32:41.343266"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Candice Wisozk"], ["zip", "65411-7369"], ["email", "dandre@feest.io"], ["password", "0bbsaadhb"], ["role", "customer"], ["created_at", "2015-08-30 23:40:22.266781"], ["updated_at", "2015-08-30 23:40:22.266781"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "dandre@feest.io"], ["password", "0bbsaadhb"]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Delaney Schulist"], ["zip", "30170"], ["email", "chelsie_cain@schneider.com"], ["password", "hbv75xws5"], ["role", "customer"], ["created_at", "2015-08-30 23:40:22.283315"], ["updated_at", "2015-08-30 23:40:22.283315"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "chelsie_cain@schneider.com"], ["password", "hbv75xws51"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Mariane Conroy"], ["zip", "31546-9007"], ["email", "bobbie_smitham@raynor.biz"], ["password", "estmmzaqy"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:40:22.290022"], ["updated_at", "2015-08-30 23:40:22.290022"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."role" = ?  [["role", "doctor"]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Wyman Baumbach MD"], ["zip", "79451-4767"], ["email", "bryon.beier@wehnergerhold.com"], ["password", "n0l9itjp7"], ["role", "customer"], ["created_at", "2015-08-30 23:40:22.296942"], ["updated_at", "2015-08-30 23:40:22.296942"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Flavio Rau"], ["zip", "18674-8592"], ["email", "april@schultz.org"], ["password", "w9cc9uopx"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:40:22.302021"], ["updated_at", "2015-08-30 23:40:22.302021"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Cory Franecki III"], ["zip", "58613"], ["email", "lauretta.bahringer@hegmann.io"], ["password", "2ofh2k03n"], ["role", "doctor"], ["years_in_practice", 5], ["created_at", "2015-08-30 23:40:22.320171"], ["updated_at", "2015-08-30 23:40:22.320171"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "appointments" ("date_of_visit", "doctor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["date_of_visit", "2015-09-01 23:40:22.317171"], ["doctor_id", 2], ["created_at", "2015-08-30 23:40:22.335169"], ["updated_at", "2015-08-30 23:40:22.335169"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."doctor_id" = ?[0m  [["doctor_id", 1]]
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Candido Christiansen"], ["zip", "57093-1469"], ["email", "ephraim_hettinger@reichel.name"], ["password", "ywapekfil"], ["role", "customer"], ["created_at", "2015-08-30 23:40:56.101589"], ["updated_at", "2015-08-30 23:40:56.101589"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "ephraim_hettinger@reichel.name"], ["password", "ywapekfil"]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Caitlyn Wunsch"], ["zip", "38464"], ["email", "caden_hahn@gleason.org"], ["password", "k3qaskbsb"], ["role", "customer"], ["created_at", "2015-08-30 23:40:56.121463"], ["updated_at", "2015-08-30 23:40:56.121463"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "caden_hahn@gleason.org"], ["password", "k3qaskbsb1"]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Antone Johnston I"], ["zip", "13366"], ["email", "nelda_boyer@spinka.io"], ["password", "r4q8mmz6j"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:40:56.127815"], ["updated_at", "2015-08-30 23:40:56.127815"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."role" = ?  [["role", "doctor"]]
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Hailey Von"], ["zip", "96031-7230"], ["email", "melya@dubuque.info"], ["password", "d36m7l9y"], ["role", "customer"], ["created_at", "2015-08-30 23:40:56.135516"], ["updated_at", "2015-08-30 23:40:56.135516"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Elisabeth Kunze Jr."], ["zip", "62083-4417"], ["email", "joelle.turcotte@macgyver.info"], ["password", "yoz3pk6ru"], ["role", "doctor"], ["years_in_practice", 5], ["created_at", "2015-08-30 23:40:56.152561"], ["updated_at", "2015-08-30 23:40:56.152561"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "appointments" ("date_of_visit", "doctor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["date_of_visit", "2015-09-01 23:40:56.150872"], ["doctor_id", 1], ["created_at", "2015-08-30 23:40:56.162457"], ["updated_at", "2015-08-30 23:40:56.162457"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Erwin Thiel"], ["zip", "14172"], ["email", "german@colelangosh.info"], ["password", "fp9c7jwjs"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:40:56.167336"], ["updated_at", "2015-08-30 23:40:56.167336"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAppointment Load (0.2ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."doctor_id" = ?[0m  [["doctor_id", 2]]
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Jasper Mitchell"], ["zip", "12758-1578"], ["email", "norberto@cain.io"], ["password", "jusrna4le"], ["role", "customer"], ["created_at", "2015-08-30 23:42:10.379515"], ["updated_at", "2015-08-30 23:42:10.379515"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "norberto@cain.io"], ["password", "jusrna4le"]]
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Lucile Jerde Sr."], ["zip", "86899"], ["email", "edward@wiegand.co"], ["password", "bny0y29dz"], ["role", "customer"], ["created_at", "2015-08-30 23:42:10.395895"], ["updated_at", "2015-08-30 23:42:10.395895"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "edward@wiegand.co"], ["password", "bny0y29dz1"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Raven VonRueden DDS"], ["zip", "40899"], ["email", "claudine@nitzsche.com"], ["password", "ksmy84mx6"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:42:10.401859"], ["updated_at", "2015-08-30 23:42:10.401859"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."role" = ?  [["role", "doctor"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Mrs. Leopoldo Larkin"], ["zip", "41881-9617"], ["email", "ibrahim.heaney@homenick.io"], ["password", "0q3l1gl41"], ["role", "customer"], ["created_at", "2015-08-30 23:42:10.409396"], ["updated_at", "2015-08-30 23:42:10.409396"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Leonard Klocko"], ["zip", "39663-0882"], ["email", "isaiah@grady.com"], ["password", "dskjvrcbw"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:42:10.414462"], ["updated_at", "2015-08-30 23:42:10.414462"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "appointments" ("date_of_visit", "doctor_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["date_of_visit", "2015-09-01 23:42:10.428303"], ["doctor_id", 1], ["created_at", "2015-08-30 23:42:10.437569"], ["updated_at", "2015-08-30 23:42:10.437569"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAppointment Load (0.1ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."doctor_id" = ?  [["doctor_id", 1]]
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Hudson Reilly DDS"], ["zip", "68118"], ["email", "kim_leffler@cremin.io"], ["password", "ke6p0f8b"], ["role", "customer"], ["created_at", "2015-08-30 23:44:50.562735"], ["updated_at", "2015-08-30 23:44:50.562735"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "kim_leffler@cremin.io"], ["password", "ke6p0f8b"]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Jaylon Sanford"], ["zip", "17221"], ["email", "liana_graham@murray.biz"], ["password", "tlmqw06vz"], ["role", "customer"], ["created_at", "2015-08-30 23:44:50.575222"], ["updated_at", "2015-08-30 23:44:50.575222"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "liana_graham@murray.biz"], ["password", "tlmqw06vz1"]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Hollie Schmidt"], ["zip", "35153"], ["email", "amparo@hyatt.co"], ["password", "6timl3fg9"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:44:50.581780"], ["updated_at", "2015-08-30 23:44:50.581780"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."role" = ?  [["role", "doctor"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Mr. April Metz"], ["zip", "79152-9543"], ["email", "grady_terry@herman.co"], ["password", "dtp8db90w"], ["role", "customer"], ["created_at", "2015-08-30 23:44:50.588978"], ["updated_at", "2015-08-30 23:44:50.588978"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wilber Kulas"], ["zip", "69098"], ["email", "johnathon@kiehn.info"], ["password", "6vso75b3m"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:44:50.594883"], ["updated_at", "2015-08-30 23:44:50.594883"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Micheal Reichert"], ["zip", "98327-8979"], ["email", "freda.kunde@schmelerdouglas.name"], ["password", "7nf1volka"], ["role", "customer"], ["created_at", "2015-08-30 23:44:50.608867"], ["updated_at", "2015-08-30 23:44:50.608867"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "appointments" ("date_of_visit", "doctor_id", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date_of_visit", "2015-09-01 23:44:50.619666"], ["doctor_id", 1], ["customer_id", 2], ["created_at", "2015-08-30 23:44:50.627269"], ["updated_at", "2015-08-30 23:44:50.627269"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."doctor_id" = ?[0m  [["doctor_id", 1]]
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Casimir Treutel"], ["zip", "42368"], ["email", "katlynn@brekke.io"], ["password", "hlblfu3a0"], ["role", "customer"], ["created_at", "2015-08-30 23:44:50.632456"], ["updated_at", "2015-08-30 23:44:50.632456"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "London Bogan MD"], ["zip", "29615"], ["email", "delmer@satterfieldrath.info"], ["password", "1d5ydybds"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:44:50.636621"], ["updated_at", "2015-08-30 23:44:50.636621"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "appointments" ("date_of_visit", "doctor_id", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date_of_visit", "2015-09-01 23:44:50.638909"], ["doctor_id", 2], ["customer_id", 1], ["created_at", "2015-08-30 23:44:50.640809"], ["updated_at", "2015-08-30 23:44:50.640809"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."customer_id" = ?[0m  [["customer_id", 1]]
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Ines Glover"], ["zip", "43399"], ["email", "horace.ruecker@kohler.io"], ["password", "glfey2wy0"], ["role", "customer"], ["created_at", "2015-08-30 23:45:15.594763"], ["updated_at", "2015-08-30 23:45:15.594763"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "horace.ruecker@kohler.io"], ["password", "glfey2wy0"]]
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Aditya Simonis"], ["zip", "51013"], ["email", "lelia@osinskikonopelski.info"], ["password", "2o3y0r43q"], ["role", "customer"], ["created_at", "2015-08-30 23:45:15.608194"], ["updated_at", "2015-08-30 23:45:15.608194"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? AND "users"."password" = ?  ORDER BY "users"."id" DESC LIMIT 1  [["email", "lelia@osinskikonopelski.info"], ["password", "2o3y0r43q1"]]
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Imogene Hane Sr."], ["zip", "96735-8481"], ["email", "carmela@brakusemard.net"], ["password", "v4a9mth76"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:45:15.616824"], ["updated_at", "2015-08-30 23:45:15.616824"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."role" = ?  [["role", "doctor"]]
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Sunny Walsh"], ["zip", "60614-9744"], ["email", "laverna@casper.com"], ["password", "7nhiqrnkh"], ["role", "customer"], ["created_at", "2015-08-30 23:45:15.623091"], ["updated_at", "2015-08-30 23:45:15.623091"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gudrun Mertz"], ["zip", "55345"], ["email", "raphael@pollichjacobi.info"], ["password", "euhrhzln"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:45:15.628013"], ["updated_at", "2015-08-30 23:45:15.628013"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Antonietta Treutel MD"], ["zip", "70949-7828"], ["email", "mae@priceeffertz.org"], ["password", "6mb7qd99k"], ["role", "customer"], ["created_at", "2015-08-30 23:45:15.636258"], ["updated_at", "2015-08-30 23:45:15.636258"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "appointments" ("date_of_visit", "doctor_id", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date_of_visit", "2015-09-01 23:45:15.644662"], ["doctor_id", 1], ["customer_id", 2], ["created_at", "2015-08-30 23:45:15.652285"], ["updated_at", "2015-08-30 23:45:15.652285"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAppointment Load (0.4ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."doctor_id" = ?[0m  [["doctor_id", 1]]
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Carey Goldner"], ["zip", "37987"], ["email", "collin_jakubowski@kubpredovic.org"], ["password", "tvrahjpwe"], ["role", "customer"], ["created_at", "2015-08-30 23:45:15.663341"], ["updated_at", "2015-08-30 23:45:15.663341"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "years_in_practice", "owner", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Ivory Ward"], ["zip", "87940-2537"], ["email", "shane@wuckertrath.biz"], ["password", "4xrfvrn5d"], ["role", "doctor"], ["years_in_practice", 5], ["owner", "t"], ["created_at", "2015-08-30 23:45:15.667152"], ["updated_at", "2015-08-30 23:45:15.667152"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "appointments" ("date_of_visit", "doctor_id", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date_of_visit", "2015-09-01 23:45:15.669256"], ["doctor_id", 2], ["customer_id", 1], ["created_at", "2015-08-30 23:45:15.670587"], ["updated_at", "2015-08-30 23:45:15.670587"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAppointment Load (0.1ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."customer_id" = ?[0m  [["customer_id", 1]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Theo Smith PhD"], ["zip", "19872-3530"], ["email", "adrian@kautzerprosacco.biz"], ["password", "u1j11hxf5"], ["role", "customer"], ["created_at", "2015-08-30 23:58:07.801314"], ["updated_at", "2015-08-30 23:58:07.801314"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "pets" ("name", "breed", "age", "weight", "pet_type", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jessyca Flatley"], ["breed", "Marty Hauck"], ["age", 5], ["weight", 35], ["pet_type", "dog"], ["customer_id", 1], ["created_at", "2015-08-30 23:58:07.824219"], ["updated_at", "2015-08-30 23:58:07.824219"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAppointment Load (0.6ms)[0m  [1mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."pet_id" = ? AND "appointments"."customer_id" = ? AND (date_of_visit > '2015-08-30')  ORDER BY "appointments"."id" ASC LIMIT 1[0m  [["pet_id", 1], ["customer_id", 1]]
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "appointments" ("date_of_visit", "pet_id", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date_of_visit", "2015-09-01 23:58:07.867197"], ["pet_id", 1], ["customer_id", 1], ["created_at", "2015-08-30 23:58:07.876786"], ["updated_at", "2015-08-30 23:58:07.876786"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Dawn Mante"], ["zip", "83023-2635"], ["email", "greyson.lind@mantewillms.org"], ["password", "jes6f2sts"], ["role", "customer"], ["created_at", "2015-08-30 23:58:40.023333"], ["updated_at", "2015-08-30 23:58:40.023333"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "pets" ("name", "breed", "age", "weight", "pet_type", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jedediah Hermann"], ["breed", "Tabitha Nikolaus"], ["age", 7], ["weight", 38], ["pet_type", "dog"], ["customer_id", 1], ["created_at", "2015-08-30 23:58:40.044903"], ["updated_at", "2015-08-30 23:58:40.044903"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAppointment Load (0.4ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."pet_id" = ?[0m  [["pet_id", 1]]
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT  "appointments".* FROM "appointments" WHERE "appointments"."pet_id" = ? AND "appointments"."customer_id" = ? AND (date_of_visit > '2015-08-30')  ORDER BY "appointments"."id" ASC LIMIT 1  [["pet_id", 1], ["customer_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "appointments" ("date_of_visit", "pet_id", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["date_of_visit", "2015-09-01 23:58:40.080707"], ["pet_id", 1], ["customer_id", 1], ["created_at", "2015-08-30 23:58:40.083935"], ["updated_at", "2015-08-30 23:58:40.083935"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Ms. Bernice Renner"], ["zip", "54718-6710"], ["email", "miller.herzog@connellylebsack.io"], ["password", "5gdvaqh1w"], ["role", "customer"], ["created_at", "2015-08-30 23:59:57.334948"], ["updated_at", "2015-08-30 23:59:57.334948"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "pets" ("name", "breed", "age", "weight", "pet_type", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Coralie Cruickshank"], ["breed", "Leon Bednar"], ["age", 8], ["weight", 10], ["pet_type", "dog"], ["customer_id", 1], ["created_at", "2015-08-30 23:59:57.355339"], ["updated_at", "2015-08-30 23:59:57.355339"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAppointment Load (0.4ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."pet_id" = ?[0m  [["pet_id", 1]]
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT  "appointments".* FROM "appointments"  ORDER BY "appointments"."id" DESC LIMIT 1
+  [1m[36mAppointment Load (0.3ms)[0m  [1mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."pet_id" = ? AND "appointments"."customer_id" = ? AND (date_of_visit > '2015-08-31')  ORDER BY "appointments"."id" ASC LIMIT 1[0m  [["pet_id", 1], ["customer_id", 1]]
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "appointments" ("date_of_visit", "pet_id", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["date_of_visit", "2015-09-02 00:01:10.776631"], ["pet_id", 1], ["customer_id", 1], ["created_at", "2015-08-31 00:01:10.831552"], ["updated_at", "2015-08-31 00:01:10.831552"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Hassan Senger"], ["zip", "21696-7668"], ["email", "erin_moriette@wyman.info"], ["password", "pfds3yzfc"], ["role", "customer"], ["created_at", "2015-08-31 00:01:18.872126"], ["updated_at", "2015-08-31 00:01:18.872126"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "pets" ("name", "breed", "age", "weight", "pet_type", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Justina Miller"], ["breed", "Dr. Luciano Ledner"], ["age", 1], ["weight", 48], ["pet_type", "dog"], ["customer_id", 1], ["created_at", "2015-08-31 00:01:18.895981"], ["updated_at", "2015-08-31 00:01:18.895981"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAppointment Load (0.6ms)[0m  [1mSELECT "appointments".* FROM "appointments" WHERE "appointments"."pet_id" = ?[0m  [["pet_id", 1]]
+  [1m[35mAppointment Load (0.4ms)[0m  SELECT  "appointments".* FROM "appointments" WHERE "appointments"."pet_id" = ? AND "appointments"."customer_id" = ? AND (appointments.date_of_visit > '2015-08-31')  ORDER BY "appointments"."id" ASC LIMIT 1  [["pet_id", 1], ["customer_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "appointments" ("date_of_visit", "pet_id", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["date_of_visit", "2015-09-02 00:01:19.844905"], ["pet_id", 1], ["customer_id", 1], ["created_at", "2015-08-31 00:01:19.906174"], ["updated_at", "2015-08-31 00:01:19.906174"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Rubye Spencer"], ["zip", "28695"], ["email", "cecelia.windler@rath.net"], ["password", "pyw2y546h"], ["role", "customer"], ["created_at", "2015-08-31 00:01:48.877171"], ["updated_at", "2015-08-31 00:01:48.877171"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "pets" ("name", "breed", "age", "weight", "pet_type", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Johnathan Moore"], ["breed", "Jackeline Blanda"], ["age", 7], ["weight", 14], ["pet_type", "dog"], ["customer_id", 1], ["created_at", "2015-08-31 00:01:48.896489"], ["updated_at", "2015-08-31 00:01:48.896489"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "appointments" ("date_of_visit", "pet_id", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["date_of_visit", "2015-09-02 00:01:48.908166"], ["pet_id", 1], ["customer_id", 1], ["created_at", "2015-08-31 00:01:48.911373"], ["updated_at", "2015-08-31 00:01:48.911373"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT "appointments".* FROM "appointments" WHERE "appointments"."pet_id" = ?  [["pet_id", 1]]
+  [1m[36mAppointment Load (0.4ms)[0m  [1mSELECT  "appointments".* FROM "appointments" WHERE "appointments"."pet_id" = ? AND "appointments"."customer_id" = ? AND (appointments.date_of_visit > '2015-08-31')  ORDER BY "appointments"."id" ASC LIMIT 1[0m  [["pet_id", 1], ["customer_id", 1]]
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("name", "zip", "email", "password", "role", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Destin Schaefer"], ["zip", "75040-5378"], ["email", "kelley@stark.com"], ["password", "3ny5wpss1"], ["role", "customer"], ["created_at", "2015-08-31 00:03:00.354974"], ["updated_at", "2015-08-31 00:03:00.354974"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "pets" ("name", "breed", "age", "weight", "pet_type", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cordell Koepp"], ["breed", "Dr. Chaz Collier"], ["age", 2], ["weight", 72], ["pet_type", "dog"], ["customer_id", 1], ["created_at", "2015-08-31 00:03:00.373106"], ["updated_at", "2015-08-31 00:03:00.373106"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "appointments" ("date_of_visit", "pet_id", "customer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["date_of_visit", "2015-09-02 00:03:00.386620"], ["pet_id", 1], ["customer_id", 1], ["created_at", "2015-08-31 00:03:00.394890"], ["updated_at", "2015-08-31 00:03:00.394890"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAppointment Load (0.2ms)[0m  SELECT  "appointments".* FROM "appointments" WHERE "appointments"."pet_id" = ? AND "appointments"."customer_id" = ? AND (appointments.date_of_visit > '2015-08-31')  ORDER BY "appointments"."id" ASC LIMIT 1  [["pet_id", 1], ["customer_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m

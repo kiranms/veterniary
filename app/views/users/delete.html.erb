@@ -1,0 +1,7 @@
+<% @appointments.each do |appointment| %>
+<%= appointment.date_of_visit %>
+<%= appointment.customer_id %>
+<%= appointment.pet_id %>
+<%= appointment.requires_reminder %>
+<%= appointment.reason_for_visit %>
+  <% end %><br>

@@ -1,0 +1,13 @@
+<%= simple_form_for @doctor do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :city %>
+  <%= f.input :state %>
+  <%= f.input :zip %>
+  <%= f.input :years_in_practice %>
+  <%= f.input :email %>
+  <%= f.input :password %>
+
+  <%= f.button :submit %>
+<% end %>
+<%= link_to "Listings", users_path %>

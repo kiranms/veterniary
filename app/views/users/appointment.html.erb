@@ -1,0 +1,21 @@
+<h1>Make an Appointment </h1>
+<body bgcolor=silver>
+<%= simple_form_for @doctor do |f| %>
+<br><br><%= f.label :role  %>
+<%= f.select :role, options_for_select( %w[doctor customer receptionist]) %><br><br>
+  <%= f.input :name %><br>
+  <%= f.input :address %><br>
+  <%= f.input :city %><br>
+  <%= f.input :state %><br>
+  <%= f.input :zip %><br>
+  <%= f.input :years_in_practice %><br>
+  <%= f.input :school_name %> <br>
+  <%= f.input :email %><br>
+  <%= f.input :owner %><br>
+  <%= f.input :password %><br>
+ <div align = "center">
+ <div position = relative, top= 40px, right = 20px>
+
+  <%= f.submit %></div></div>
+<% end %>
+</body>
